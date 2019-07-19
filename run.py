@@ -112,7 +112,7 @@ index_html = """
 		<div class="col-md-4 offset-md-4 col-sm-12">
 			<form role="form" class="form form-inline" action="/upload" method="post" enctype="multipart/form-data">
 				<div class="form-group">
-					<input type="file" class="form-control-file" name="file"/>
+					<input required type="file" class="form-control-file" name="file"/>
 				</div>
 				<button type="submit" class="btn btn-secondary">
 					Upload image
@@ -126,9 +126,9 @@ index_html = """
 				<div class="form-group">
 					 
 					<label for="url">
-						or
+						or enter a URL
 					</label>
-					<input type="url" name="url" class="form-control" id="url" placeholder="https://cdn.tourradar.com/s3/review/750x400/133738_4485aa24.jpg"/>
+					<input required type="url" name="url" class="form-control" id="url" placeholder="eg. https://cdn.tourradar.com/s3/review/750x400/133738_4485aa24.jpg"/>
 				</div>
 				<button type="submit" class="btn btn-secondary">
 					Submit
@@ -208,7 +208,7 @@ resp_html = """
 		<div class="col-md-4 offset-md-4 col-sm-12">
 			<form role="form" class="form form-inline" action="/upload" method="post" enctype="multipart/form-data">
 				<div class="form-group">
-					<input type="file" class="form-control-file" name="file"/>
+					<input required type="file" class="form-control-file" name="file"/>
 				</div>
 				<button type="submit" class="btn btn-secondary">
 					Upload image
@@ -222,9 +222,9 @@ resp_html = """
 				<div class="form-group">
 					 
 					<label for="url">
-						or
+						or enter a URL
 					</label>
-					<input type="url" name="url" class="form-control" id="url" placeholder="https://cdn.tourradar.com/s3/review/750x400/133738_4485aa24.jpg"/>
+					<input required type="url" name="url" class="form-control" id="url" placeholder="eg. https://cdn.tourradar.com/s3/review/750x400/133738_4485aa24.jpg"/>
 				</div>
 				<button type="submit" class="btn btn-secondary">
 					Submit
